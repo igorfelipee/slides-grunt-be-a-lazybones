@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Grunt: be a lazybones</title>
+
+        <meta name="description" content="Apresentação sobre Grunt no evento DAY.min.js do grupo GDG Duque de Caxias.">
+        <meta name="author" content="Igor Felipe">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.min.css">
+
+        <link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+        <link rel="shortcut icon" href="./favicon.ico" />
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <meta itemprop="image" content="https://raw.githubusercontent.com/gdgduquedecaxias/introducao/master/img/gdg-caxias-intro.png">
+        <meta name="twitter:image:src" content="https://raw.githubusercontent.com/gdgduquedecaxias/introducao/master/img/gdg-caxias-intro.png">
+        <meta property="og:image" content="https://raw.githubusercontent.com/gdgduquedecaxias/introducao/master/img/gdg-caxias-intro.png"/>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+
+        <!-- override de estilo -->
+        <link rel="stylesheet" href="css/override.css">
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+                <section data-background="#fff">
+                  <img class="img" src="img/grunt-logo.png" alt="logo grunt">
+                  <h1 class="marked">be a lazybones</h1>
+                </section>
+                <section>
+                  <img class="circle-img" src="img/yo.jpg" alt="yo">
+                  <h2>Olá :)</h2>
+                  <p>Me chamo Igor Felipe e sou entusiasta front-end. Atualmente estou com foco em JS.</p>
+                  <p class="marked">@igorfelipee</p>
+                </section>
+                <section>
+                  <h2>Quanto tempo já foi perdido com tasks bobas ?</h2>
+                  <p class="fragment" data-fragment-index="0">Compilar arquivo SASS/LESS/Coffee Script</p>
+                  <p class="fragment" data-fragment-index="1">Minificar arquivos</p>
+                  <p class="fragment" data-fragment-index="2">Verificar erros no seu JS</p>
+                  <p class="fragment" data-fragment-index="3">Otimizar imagens...</p>
+                  <p class="fragment" data-fragment-index="4">O pior é quando fazemos isso tudo ao mesmo tempo...</p>
+                </section>
+                <section>
+                  <h2>Muito tempo perdido e pouca produção</h2>
+                </section>
+                <section>
+                  <h2>Vamos começar com uma história...</h2>
+                </section>
+                <section>
+                  <img class="circle-img" src="img/gabriel1.jpg" alt="yo">
+                  <p>Bibi é um desenvolvedor front-end que está cansado de realizar tasks simples que estão tomando o seu tempo e gerando vários erros...</p>
+                </section>
+                <section>
+                  <img class="circle-img" src="img/gabriel2.jpg" alt="yo">
+                  <p>Ele fazia essa cara de mau toda vez que ele se perdia nas 20 tasks repetitivas...</p>
+                </section>
+                <section>
+                  <img class="circle-img" src="img/lucas1.jpg" alt="yo">
+                  <p>Mas foi aí que seu brother Lulu passou a visão e apresentou o Grunt pra ele.</p>
+                </section>
+                <section>
+                  <img class="circle-img" src="img/gabriel3.jpg" alt="yo">
+                  <p>E após isso, Bibi viveu feliz para sempre desenvolvendo os seus web apps sem se preocupar com as tasks bobas.</p>
+                </section>
+                <section>
+                  <h2>Mas por que Bibi ficou tão feliz após conhecer o Grunt ?</h2>
+                </section>
+                <section>
+                  <h3>Ele pode automatizar estas tarefas!!!!</h3>
+                </section>
+                <section>
+                  <h2>Mais produção e muuuuuuuuito menos tempo perdido</h2>
+                </section>
+                <section data-background="img/bg1.jpg">
+                </section>
+                <section>
+                  <h2>Por onde eu começo ?</h2>
+                  <p class="fragment" data-fragment-index="0"> 1° - Instalar o Nodejs</p>
+                </section>
+                <section data-background="img/node.png">
+                </section>
+                <section>
+                  <h2>Instalando a CLI do Grunt</h2>
+                  <code class="fragment" data-fragment-index="0">npm install -g grunt-cli</code>
+                </section>
+                <section>
+                  <h2>Iniciar o seu projeto</h2>
+                  <code class="fragment" data-fragment-index="0">npm init //na pasta do projeto hein!!</code>
+                </section>
+                <section>
+                  <h2>Instalar o Grunt na pasta do seu projeto</h2>
+                  <code class="fragment" data-fragment-index="0">npm install grunt --save-dev</code>
+                </section>
+                <section data-background="img/grunt-1.png">
+                </section>
+                <section data-background="img/grunt-2.png">
+                </section>
+                <section>
+                  <h2>Baixar o plugin desejado</h2>
+                  <code class="fragment" data-fragment-index="0">npm install grunt-contrib-sass --save-dev //sass</code>
+                </section>
+                <section>
+                  <h2>Carregar o plugin desejado</h2>
+                  <code class="fragment" data-fragment-index="0">grunt.loadNpmTasks('grunt-contrib-sass'); //após o grunt.initConfig</code>
+                </section>
+                <section>
+                  <h2>Configurar o plugin</h2>
+                  <p class="fragment" data-fragment-index="0">Cada plugin tem a sua forma única de ser configurado que é informado na própria documentação</p>
+                </section>
+                <section>
+                  <h2>Live codin' time!</h2>
+                </section>
+                <section>
+                  <h2>Perguntas ?</h2>
+                </section>
+                <section data-background="img/eng.jpg">
+                </section>
+            </div><!--slides-->
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Parallax scrolling
+                // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+                // parallaxBackgroundSize: '2100px 900px',
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
